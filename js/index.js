@@ -295,11 +295,8 @@
      * Getting Data and init map
      */
     $.when(
-        $.getJSON('./employee_list.json'),
-        $.getJSON('./map-size.php', {
-            file_path: './map.png'
-        })
-    ).then(function (employeeList, imageSize) {
+        $.getJSON('./employee_list.json')
+    ).then(function (employeeList) {
         window.geoJson = employeeList[0];
         window.mapSize = {
             width: 14920,
