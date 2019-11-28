@@ -95,7 +95,7 @@
                 $jobTitle = $('<input type="text" class="form-field" id="employee-title" required placeholder="Job Title">'),
                 $email = $('<input type="email" class="form-field" id="employee-email" required placeholder="Email">'),
                 $phone = $('<input type="phone" class="form-field" id="employee-phone" placeholder="+1-234-567-8910" required>'),
-                $photo = $('<input type="file" class="form-field" id="employee-photo" data-image-src="' + feature.properties.photo + '" placeholder="Choose Photo">'),
+                $photo = $('<input type="file" class="form-field" id="employee-photo" data-image-src="" placeholder="Choose Photo">'),
                 $btnSave = $('<button type="submit" class="form-field action" id="save">Save</button>'),
                 $btnRemove = $('<button class="form-field action" id="remove">Remove</button>'),
                 popup;
