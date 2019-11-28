@@ -2,8 +2,8 @@
 
 Beta version of an indoor office map that allows you to arrange your staff, rooms, and printers.
   
-Frontend [Demo](http://floorplan.github.io/ "Frontend").  
-Admin [Demo](http://floorplan.github.io/admin "Admin Panel").
+Frontend [Demo](https://asshumski.github.io/floorplan/ "Frontend").  
+Admin [Demo](https://asshumski.github.io/floorplan/admin "Admin Panel"). Save Button disabled for demo.
 
 All you need to make everething runing are:
 1. Web server with PHP 
