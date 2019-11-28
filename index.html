@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Office Map by Andrei Shumski</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=.7, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <div id="sidebar">
+    <div class="logo">
+      <span>Office map</span>
+      <a href="https://github.com/asshumski" target="_blank" title="Github Profile">
+        <img src="./images/logo.svg" alt="Logo">
+      </a>
+    </div>
+    <div class="search-field">
+      <input type="text" id="search" placeholder="Search for colleagues...">
+      <img src="./images/cross.svg" class="action -clear" alt="Clear" onclick="$('#search').val('');$('#search').trigger('input');">
+    </div>
+    <div class="employee-list"></div>
+  </div>
+  <div id="map"></div>
+  <input type="checkbox" id="rooms-list-trigger">
+  <div id="rooms">
+    <label for="rooms-list-trigger">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="45" viewBox="0 -256 1792 1792">
+        <path d="M1129.254 1375.576l-652-651q-37-37-37-90.5t37-90.5l652-651q37-37 90.5-37t90.5 37l75 75q37 37 37 90.5t-37 90.5l-486 486 486 485q37 38 37 91t-37 90l-75 75q-37 37-90.5 37t-90.5-37z"
+              fill="currentColor"/>
+      </svg>
+    </label>
+    <div class="rooms-wrapper rooms-list"></div>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<script src="js/rastercoords.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
