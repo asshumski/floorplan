@@ -301,7 +301,10 @@
         })
     ).then(function (employeeList, imageSize) {
         window.geoJson = employeeList[0];
-        window.mapSize = imageSize[0];
+        window.mapSize = {
+            width: 14920,
+            height: 5747
+        };
 
         init('map');
     });
