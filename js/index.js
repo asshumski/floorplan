@@ -297,7 +297,7 @@
     $.when(
         $.getJSON('./employee_list.json')
     ).then(function (employeeList) {
-        window.geoJson = employeeList[0];
+        window.geoJson = employeeList;
         window.mapSize = {
             width: 14920,
             height: 5747
