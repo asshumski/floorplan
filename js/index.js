@@ -28,7 +28,7 @@
         L.control.layers({}, {
             'Rooms': layerRooms(map, rc),
             'Printers': layerPrinters(map, rc, img),
-            'Stuff': layerStaff(map, rc)
+            'Staff': layerStaff(map, rc)
         }).setPosition('topleft').addTo(map);
 
         L.control.zoom({
