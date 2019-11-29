@@ -7,7 +7,7 @@ Admin [Demo](https://asshumski.github.io/floorplan/admin "Admin Panel"). Save Bu
 
 All you need to make everething runing are:
 1. Web server with PHP 
-2. python-gdal library that creates image tiles for leaflet.js
+2. python-gdal library which used by [gdal2tiles-leaflet](https://github.com/commenthol/gdal2tiles-leaflet "gdal2tiles-leaflet") to create image tiles for [leaflet.js](https://leafletjs.com/ "leaflet.js")
 
 Install the python-gdal library that creates image tiles from ./map.png
 ```sh
